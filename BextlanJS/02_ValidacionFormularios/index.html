@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="description" content="En este ejercicio aprenderemos a validar formularios con JavaScript y darles presentación con CSS."/>
+    <title>Validación de Formularios con JS</title>
+    <link rel="stylesheet" href="css/estilos.css"/>
+    <script src="js/validaciones.js"></script>
+</head>
+<body>
+    <form id="contacto-frm" name="contacto-fm" action="" method="GET" enctype="application/x-www-form-urlencoded">
+        <fieldset>
+            <legend>Contacto</legend>
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre-txt" class="cambio"/>
+            <br/><br/>
+
+            <label for="edad">Edad: </label>
+            <input type="text" id="edad" name="edad-txt" class="cambio"/>
+            <br/><br/>
+
+            <label for="email">Email: </label>
+            <input type="text" id="email" name="email-txt" class="cambio"/>
+            <br/><br/>
+
+            <label for="sexo">Sexo: </label>
+            <input type="radio" id="M" name="sexo-rdo" value="M"/><label for="M">Masculino</label>
+            <input type="radio" id="F" name="sexo-rdo" value="F"/><label for="F">Femenino</label>
+            <br/><br/>
+
+            <label for="asunto">Asunto: </label>
+            <input type="text" id="asunto" name="asunto-txt"/>
+            <br/><br/>
+
+            <label for="comentarios">Comentarios: </label>
+            <br/>
+            <textarea name="comentarios-txt" id="comentarios" cols="50" rows="5" class="cambio"></textarea>
+            <br/><br/>
+
+            <input type="button" id="enviar" class="cambio" name="enviar_btn" value="Enviar" onclick="validarForm()"/>
+            <input type="button" id="limpiar" class="cambio" name="limpiar_btn" value="Limpiar" onclick="limpiarForm()"/>    
+        </fieldset>
+
+    </form>
+</body>
+</html>
