@@ -1,5 +1,6 @@
 function validarForm(){
     var verificar = true;
+    
     alert("Validando");
     document.contacto-frm.submit();
 }
