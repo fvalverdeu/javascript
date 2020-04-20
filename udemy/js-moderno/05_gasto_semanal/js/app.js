@@ -64,7 +64,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Instanciar la clase Interfaz
     const ui = new Interfaz();
     ui.insertarPresupuesto(cantidadPresupuesto.presupuesto);
-
   }
 })
 
